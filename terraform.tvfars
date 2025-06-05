@@ -1,1 +1,69 @@
 
+####################################################
+# 		THIS DOCUMENT BELONGS TO WAREWORKS         #
+#  This is variable definfiation for your VM build.#
+#     Input details for your speciifications.      #
+####################################################
+
+################
+# Organisation #
+################
+
+company     					= "mylab"
+app_name    					= "myapp"
+environment 					= "test"				# Options: e.g dev, uat, prod.
+
+##################
+# Authentication #
+##################
+
+azure-tenant-id       			= ""
+azure-subscription-id 			= ""
+azure-client-id       			= ""
+azure-client-secret   			= ""
+
+##################
+# Resource Group #
+##################
+
+resource-group   				= "myrg"
+location    					= "eastus"
+
+###########
+# Network #
+###########
+
+network-vnet-cidr   			= "10.128.0.0/16"
+network-subnet-cidr 			= "10.128.1.0/24"
+
+##################
+# VM Information #
+##################
+
+linux_vm_name        			= "rheltest"			# Do not use include special characters and spaces only alpha numeric values.	
+linux_vm_size        			= "Standard_B2s"
+linux_vm_image_publisher     	= "RedHat"
+linux_vm_image_offer 		 	= "RHEL"
+linux_vm_image_sku 	         	= "9-lvm-gen2"		# Options: 16.04-LTS", "18.04-LTS", "20.04-LT" , "9-lvm-gen2"
+os_storage_account_type			= "Standard_LRS"
+os_disk_size_gb					= "64"
+data_storage_account_type		= "Standard_LRS"
+data_disk_size_gb				= "40"
+linux_admin_username 			= ""
+linux_admin_password 			= ""
+#linux_admin_public_key          = ""
+
+
+########
+# Tags #
+########
+
+tags = {
+  application = "my-app"
+  environment = "dev"
+  owner       = "Olalekan"
+  department  = "IT"
+  location    = "UK"
+}
+
+
